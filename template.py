@@ -43,7 +43,7 @@ context.log_level = 'info'
 #pprint(elf.symbols)
 
 # ===============================================================
-#						SHELLCODE GOES HERE
+#			SHELLCODE GOES HERE
 # ===============================================================
 
 sh = shellcraft.sh()
@@ -56,7 +56,7 @@ shellcode = asm(sh)
 #shellcode = asm(custom_shellcode)
 
 # ===============================================================
-#						ROPCHAINS GOES HERE
+#			ROPCHAINS GOES HERE
 # ===============================================================
 
 rop = ROP(elf)
@@ -65,7 +65,7 @@ rop = ROP(elf)
 #pprint(rop.gadgets)
 
 # =============================================================
-#						EXPLOIT GOES HERE
+#			EXPLOIT GOES HERE
 # =============================================================
 
 exploit = start()
